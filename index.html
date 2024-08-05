@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -212,130 +213,130 @@
           .image-container:hover img {
             transform: scale(1.1); /* Make the image slightly bigger on hover */
             cursor: pointer; /* Change the cursor to a pointer on hover */
+        }
+      /* Анимация падения снежинок */
+      @keyframes fall {
+          0% {transform: translate(0, 0);
+              opacity: 1;
           }
-        /* Анимация падения снежинок */
-        @keyframes fall {
-            0% {transform: translate(0, 0);
-                opacity: 1;
-            }
-            100% {
-                transform: translate(0, 100%);
-                opacity: 0;
-            }
-        }
+          100% {
+              transform: translate(0, 100%);
+              opacity: 0;
+          }
+      }
 
-        /* Добавляем стили для разных типов снежинок */
-        .flake-small {
-            width: 5px;
-            height: 5px;
-            animation-duration: 5s;
-        }
+      /* Добавляем стили для разных типов снежинок */
+      .flake-small {
+          width: 5px;
+          height: 5px;
+          animation-duration: 5s;
+      }
 
-        .flake-large {
-            width: 15px;
-            height: 15px;
-            animation-duration:
-            15s;
-        }
+      .flake-large {
+          width: 15px;
+          height: 15px;
+          animation-duration:
+          15s;
+      }
 
-        .flake-medium {
-            width: 10px;
-            height: 10px;
-            animation-duration: 10s;
-        }
+      .flake-medium {
+          width: 10px;
+          height: 10px;
+          animation-duration: 10s;
+      }
 
-        /* Стили для картинки пингвина */
-        .penguin-container {
-            position: relative; /* Добавляем относительное позиционирование */
-            margin-top: 20px;
-            display: inline-block;
-            text-align: center;
-        }
+      /* Стили для картинки пингвина */
+      .penguin-container {
+          position: relative; /* Добавляем относительное позиционирование */
+          margin-top: 20px;
+          display: inline-block;
+          text-align: center;
+      }
 
-        .penguin-container img {
-            width: 150px; /* Устанавливаем фиксированную ширину */
-            height: auto; /* Сохраняем пропорции */
-            position: relative; /* Позиционируем пингвина */
-            top: 50%; /* Позиционируем по центру по вертикали */
-            left: 50%; /* Позиционируем по центру по горизонтали */
-            transform: translate(-50%, -50%); /* Выравниваем по центру */
-        }
+      .penguin-container img {
+          width: 150px; /* Устанавливаем фиксированную ширину */
+          height: auto; /* Сохраняем пропорции */
+          position: relative; /* Позиционируем пингвина */
+          top: 50%; /* Позиционируем по центру по вертикали */
+          left: 50%; /* Позиционируем по центру по горизонтали */
+          transform: translate(-50%, -50%); /* Выравниваем по центру */
+      }
 
-        /* Стили для флажка Антарктики */
-        .antarctica-flag {
-            width: 600px; /* Увеличиваем ширину в 4 раза */
-            height: auto; /* Сохраняем пропорции */
-            display: block; /* Занимаем всю доступную ширину */
-            margin: 0 auto; /* Выравниваем по центру */
-            position: absolute; /* Позиционируем флаг */
-            top: 50%; /* Позиционируем по центру по вертикали */
-            left: 50%; /* Позиционируем по центру по горизонтали */
-            transform: translate(-50%, -50%); /* Выравниваем по центру */
-            z-index: -1; /* Флаг позади пингвина */
-        }
+      /* Стили для флажка Антарктики */
+      .antarctica-flag {
+          width: 600px; /* Увеличиваем ширину в 4 раза */
+          height: auto; /* Сохраняем пропорции */
+          display: block; /* Занимаем всю доступную ширину */
+          margin: 0 auto; /* Выравниваем по центру */
+          position: absolute; /* Позиционируем флаг */
+          top: 50%; /* Позиционируем по центру по вертикали */
+          left: 50%; /* Позиционируем по центру по горизонтали */
+          transform: translate(-50%, -50%); /* Выравниваем по центру */
+          z-index: -1; /* Флаг позади пингвина */
+      }
 
-        /* Стили для секции extraction */
-        .extraction-container {
-            margin-top: 0; /* Убираем отступ сверху */
-        }
+      /* Стили для секции extraction */
+      .extraction-container {
+          margin-top: 0; /* Убираем отступ сверху */
+      }
 
-        /* Стили для текста в секции extraction */
-        .extraction-container h4 {
-            margin-bottom: 5px; /* Уменьшаем отступ снизу */
-        }
+      /* Стили для текста в секции extraction */
+      .extraction-container h4 {
+          margin-bottom: 5px; /* Уменьшаем отступ снизу */
+      }
 
-        .extraction-container p {
-            margin-bottom: 0; /* Убираем отступ снизу */
-        }
+      .extraction-container p {
+          margin-bottom: 0; /* Убираем отступ снизу */
+      }
 
-        /* Стили для секции с пингвином */
-        .penguin-container {
-            margin-bottom: 0; /* Убираем отступ снизу */
-        }
+      /* Стили для секции с пингвином */
+      .penguin-container {
+          margin-bottom: 0; /* Убираем отступ снизу */
+      }
 
-        /* Стили для секции с "extraction" */
-        .extraction-container {
-            margin-bottom: 0; /* Убираем отступ снизу */
-        }
+      /* Стили для секции с "extraction" */
+      .extraction-container {
+          margin-bottom: 0; /* Убираем отступ снизу */
+      }
 
-        /* Стили для пингвина */
-        .penguin-container img {
-            margin-bottom: -10px; /* Уменьшаем отступ снизу для пингвина */
-        }
+      /* Стили для пингвина */
+      .penguin-container img {
+          margin-bottom: -10px; /* Уменьшаем отступ снизу для пингвина */
+      }
 
-        /* Стили для блока "extraction" */
-        .extraction-container {
-            margin-top: -10px; /* Уменьшаем отступ сверху для блока "extraction" */
-        }
+      /* Стили для блока "extraction" */
+      .extraction-container {
+          margin-top: -10px; /* Уменьшаем отступ сверху для блока "extraction" */
+      }
 
-        /* Стили для текста в блоке "extraction" */
-        .extraction-container h4 {
-            margin-bottom: 0; /* Убираем отступ снизу */
-        }
+      /* Стили для текста в блоке "extraction" */
+      .extraction-container h4 {
+          margin-bottom: 0; /* Убираем отступ снизу */
+      }
 
-        .extraction-container p {
-            margin-bottom: 0; /* Убираем отступ снизу */
-        }
+      .extraction-container p {
+          margin-bottom: 0; /* Убираем отступ снизу */
+      }
 
-        /* Стиль для кругового таймера */
-        .timer-container {
-            position: relative;
-            width: 150px;
-            height: 150px;
-            margin: 20px auto;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border-radius: 50%;
-        }
+      /* Стиль для кругового таймера */
+      .timer-container {
+          position: relative;
+          width: 150px;
+          height: 150px;
+          margin: 20px auto;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 50%;
+      }
 
-        .timer-circle {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            border: 10px solid #999; /* Серый цвет внешнего круга */
-            position: absolute;
-            top: 0;
+      .timer-circle {
+          width: 150px;
+          height: 150px;
+          border-radius: 50%;
+          border: 10px solid #999; /* Серый цвет внешнего круга */
+          position: absolute;
+          top: 0;
             left: 0;
         }
 
@@ -347,7 +348,7 @@
             position: absolute;
             top: 0;
             left: 0;
-            background-color: #fdd835; /* Желтый цвет прогресса */
+            background-color: #39ffdb; /* Желтый цвет прогресса */
         }
 
         .timer-center {
@@ -360,7 +361,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: #ffd700; /* Золотой цвет центра */
+            background-color: #00ffee; /* Золотой цвет центра */
             border-radius: 50%;
         }
 
@@ -375,6 +376,37 @@
             left: 50%;
             transform: translateX(-50%);
             font-size: 16px;
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 20px;
+            background-color: #ccc;
+            border-radius: 50px;
+            overflow: hidden;
+            margin-bottom: 10px; /* Adjust as needed */
+        }
+
+        .progress-bar-fill {
+            height: 100%;
+            background-color: rgb(4,129,255);
+            width: 0%; /* Initially 0% filled */
+            transition: width 1s ease-in-out; /* Smooth transition for filling */
+        }
+
+        /* Style for the "Claim" button */
+        #claimButton {
+            background-color: #007bff; /* Blue background */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-family: 'Junegull', sans-serif;
+        }
+
+        #claimButton:hover {
+            background-color: #0069d9; /* Darker blue on hover */
         }
     </style>
 </head>
@@ -449,23 +481,8 @@
             <button class="btn btn-secondary">Show more tasks</button>
         </div>
     </div>
-    <div class="row" id="fridgeContent" style="display: none;">
-        <div class="col-12 text-center">
-            <div class="task" style="margin-bottom: 20px;">
-                <div class="task-title">Boost PINGVI channel</div>
-                <div class="task-count">50 CATS</div>
-                <a href="https://t.me/pingvigang" class="button_1722621636632" target="_blank">
-                    <span style="color: rgb(68, 224, 255);"> выполнить </span>  
-                </a>
-            </div>
-            
-                <div class="image-container">
-                    <img src="vin.png" alt="tuxedo penguin" width="150" height="150" class="img-fluid mx-auto d-block">
-                </div>
-            </ul>
-        </div>
-    </div>
- 
+    
+   
     <div class="control-panel">
         <div class="control-buttons-container">
             <div class="control-button" id="fridgeButton">
@@ -484,26 +501,195 @@
             </div>
         </div>
     </div>
- </div>
- 
- <script>
-     const randomFactElement = document.getElementById('randomFact');
-     const facts = [
-         "Существует 18 видов пингвинов, каждый из которых имеет свои особенности.",
-         "Пингвины могут нырять на глубину до 500 метров и оставаться под водой до 20 минут.",
-         "Пингвины живут в колониях, насчитывающих сотни и даже тысячи особей.",
-         "Пингвины общаются друг с другом с помощью различных звуков и движений.",
-         "Пингвины не мёрзнут в холодной воде благодаря толстому слою жира и перьям, образующим водонепроницаемую оболочку.",
-         "Пингвины — социальные птицы и часто образуют пары на всю жизнь.",
-         "Глаза пингвинов устроены таким образом, что они могут видеть под водой и на суше."
-     ];
- 
-     function getRandomFact() {
-         const randomIndex = Math.floor(Math.random() * facts.length);
-         randomFactElement.textContent = facts[randomIndex];
-     }
- 
-     getRandomFact(); // Вызываем функцию при загрузке страницы
+    <div class="row" id="fridgeContent" style="display: none;">
+        <div class="col-12 text-center">
+            <div class="task" style="margin-bottom: 20px;">
+                <div class="task-title">Boost PINGVI channel</div>
+                <div class="task-count">50 CATS</div>
+                <a href="https://t.me/pingvigang" class="button_1722621636632" target="_blank">
+                    <span style="color: rgb(68, 224, 255);">выполнить</span>  
+                </a>
+            </div>
+            <div id="counter" style="font-size: 2em; color:  rgb(68, 224, 255); margin-bottom: 30px;">0</div> 
+            
+            <div class="image-container">
+                <img src="vin.png" alt="tuxedo penguin" width="150" height="150" class="img-fluid mx-auto d-block">
+
+            </div>
+            <div class="progress-bar">
+                <div class="progress-bar-fill" id="progressBarFill"></div>
+
+                <div id="timer" style="position: absolute; bottom: 62px; left: 50%; transform: translateX(-50%); color: rgb(255, 255, 255);">0</div> 
+              
+    
+            </div>
+            <button id="claimButton" class="btn btn-primary" style="margin-top: 10px;">Claim</button>
+        </div>
+    
+    
+  
+    <style>
+    @font-face {
+      font-family: 'Junegull';
+      src: url('fonts/junegull.ttf') format('truetype'); /* Replace with the actual path */
+    }
+    
+    .image-container {
+      position: relative;
+      display: inline-block; /* For proper positioning within the list */
+    }
+    
+    .image-container img {
+      transition: transform 0.1s ease; /* Smooth transition for the hover effect */
+    }
+    
+    .image-container:hover img {
+      transform: scale(1.1); /* Make the image slightly bigger on hover */
+      cursor: pointer; /* Change the cursor to a pointer on hover */
+    }
+    
+    .task, .task-title, .task-count, .button_1722621636632 span, #counter, #timer {
+      font-family: 'Junegull', sans-serif; 
+    }
+    
+    .task-title, .task-count, .button_1722621636632 span {
+      font-family: sans-serif; /* Default font for these elements */
+    }
+    
+    #timer {
+      font-family: 'Junegull', sans-serif; 
+    }
+    
+    #fridgeContent {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    /* Animation and glow styles */
+    .image-container img.active {
+      animation: pulse 1s infinite;
+      filter: drop-shadow(0 0 10px rgb(58, 245, 255)); /* Blue glow */
+    }
+    
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+      100% { transform: scale(1); }
+    }
+    </style>
+    
+    <script>
+      let counter = 0;
+      let timer = 0; // Start timer at 0 for forward counting
+      let intervalId;
+      let lastClickTime = 0;
+      let cooldownTime = 2 * 60 * 60 * 1000; // 2 hours in milliseconds
+    
+      const imageContainer = document.querySelector('.image-container');
+      const imageElement = document.querySelector('.image-container img'); // Get the image element
+      const counterElement = document.getElementById('counter');
+      const timerElement = document.getElementById('timer');
+      const progressBarFill = document.getElementById('progressBarFill');
+      const claimButton = document.getElementById('claimButton');
+    
+      // Touch events for mobile support
+      imageContainer.addEventListener('touchstart', () => {
+        if (Date.now() - lastClickTime < cooldownTime) {
+          alert('Wait for 2 hours before clicking again!');
+          return;
+        }
+        lastClickTime = Date.now();
+    
+        imageElement.classList.add('active'); // Add the active class for animation and glow
+        intervalId = setInterval(() => {
+          counter += 15;
+          counterElement.textContent = counter;
+          timer++; // Increase timer value
+          timerElement.textContent = timer;
+          progressBarFill.style.width = (timer / 60) * 100 + '%'; // Update progress bar
+          if (timer >= 60) { // Stop at 60 seconds
+            clearInterval(intervalId);
+            alert("Time's up!");
+            imageElement.classList.remove('active'); // Remove the active class on timeout
+          }
+        }, 1000); // 1 second interval
+      });
+    
+      imageContainer.addEventListener('touchend', () => {
+        clearInterval(intervalId);
+        imageElement.classList.remove('active'); // Remove the active class on touch end
+      });
+    
+      // Keep the 'mousedown' event for desktop support
+      imageContainer.addEventListener('mousedown', () => {
+        if (Date.now() - lastClickTime < cooldownTime) {
+          alert('Wait for 2 hours before clicking again!');
+          return;
+        }
+        lastClickTime = Date.now();
+    
+        imageElement.classList.add('active'); // Add the active class for animation and glow
+        intervalId = setInterval(() => {
+          counter += 15;
+          counterElement.textContent = counter;
+          timer++; // Increase timer value
+          timerElement.textContent = timer;
+          progressBarFill.style.width = (timer / 60) * 100 + '%'; // Update progress bar
+          if (timer >= 60) { // Stop at 60 seconds
+            clearInterval(intervalId);
+            alert("Time's up!");
+            imageElement.classList.remove('active'); // Remove the active class on timeout
+          }
+        }, 1000); // 1 second interval
+      });
+    
+      imageContainer.addEventListener('mouseup', () => {
+        clearInterval(intervalId);
+        imageElement.classList.remove('active'); // Remove the active class on mouse up
+      });
+    
+      imageContainer.addEventListener('mouseout', () => {
+        clearInterval(intervalId);
+        imageElement.classList.remove('active'); // Remove the active class on mouse out
+      });
+    
+      claimButton.addEventListener('click', () => {
+        clearInterval(intervalId);
+        imageElement.classList.remove('active');
+        counter = 0;
+        timer = 0;
+        counterElement.textContent = counter;
+        timerElement.textContent = timer;
+        progressBarFill.style.width = '0%';
+      });
+    </script>
+    
+      
+    
+    <script>
+        const timerValueElement = document.getElementById('timerValue');
+        const cooldownTimerElement = document.getElementById('cooldownTimer');
+  
+        // Получаем время окончания кулдауна из localStorage
+   const randomFactElement = document.getElementById('randomFact');
+   const facts = [
+       "Существует 18 видов пингвинов, каждый из которых имеет свои особенности.",
+       "Пингвины могут нырять на глубину до 500 метров и оставаться под водой до 20 минут.",
+       "Пингвины живут в колониях, насчитывающих сотни и даже тысячи особей.",
+       "Пингвины общаются друг с другом с помощью различных звуков и движений.",
+       "Пингвины не мёрзнут в холодной воде благодаря толстому слою жира и перьям, образующим водонепроницаемую оболочку.",
+       "Пингвины — социальные птицы и часто образуют пары на всю жизнь.",
+       "Глаза пингвинов устроены таким образом, что они могут видеть под водой и на суше."
+   ];
+
+   function getRandomFact() {
+       const randomIndex = Math.floor(Math.random() * facts.length);
+       randomFactElement.textContent = facts[randomIndex];
+   }
+
+   getRandomFact(); // Вызываем функцию при загрузке страницы
+
  
      const fridgeButton = document.getElementById('fridgeButton');
      const homeButton = document.getElementById('homeButton');
@@ -537,7 +723,11 @@
          fridgeContent.style.display = 'none';
          mapsImage.style.display = 'block';
      });
- 
+
+    
+    
+        
+    
  </script>
  
  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
